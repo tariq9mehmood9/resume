@@ -1,0 +1,256 @@
+%-------------------------
+% Resume in Latex
+% Author : Tariq Mehmood
+% Based off of: https://github.com/jakegut/resume
+% License : MIT
+%------------------------
+
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome}
+\input{glyphtounicode}
+
+
+%----------FONT OPTIONS----------
+% sans-serif
+% \usepackage[sfdefault]{FiraSans}
+% \usepackage[sfdefault]{roboto}
+% \usepackage[sfdefault]{noto-sans}
+% \usepackage[default]{sourcesanspro}
+
+% serif
+% \usepackage{CormorantGaramond}
+% \usepackage{charter}
+
+
+\pagestyle{fancy}
+\fancyhf{} % clear all header and footer fields
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+% Adjust margins
+\addtolength{\oddsidemargin}{-0.5in}
+\addtolength{\evensidemargin}{-0.5in}
+\addtolength{\textwidth}{1in}
+\addtolength{\topmargin}{-.5in}
+\addtolength{\textheight}{1.0in}
+
+\urlstyle{same}
+
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Sections formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large
+}{}{0em}{}[\color{black}\titlerule \vspace{-5pt}]
+
+% Ensure that generate pdf is machine readable/ATS parsable
+\pdfgentounicode=1
+
+%-------------------------
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-2pt}}
+  }
+}
+
+\newcommand{\resumeSubItem}[1]{
+  \begin{itemize}
+    \item[$\circ$]\small{
+      {#1 \vspace{-2pt}}
+    }
+  \end{itemize}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+  \item
+  \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+    \small#1 & #2 \\
+  \end{tabular*}\vspace{-7pt}
+}
+
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  RESUME STARTS HERE  %%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+
+\begin{document}
+
+%
+%----------HEADING----------
+\begin{center}
+  \textbf{\Huge \scshape Tariq Mehmood} \\ \vspace{1pt}
+  \large{\faPhone\space}\small +92 xxx xxxxxxx $|$
+  \large{\faEnvelope\space}\href{mailto:tariq9mehmood9@gmail.com}{\underline{tariq9mehmood9@gmail.com}} $|$ 
+  \large{\faLinkedinSquare\space}\href{https://linkedin.com/in/tariq9mehmood9}{\underline{tariq9mehmood9}} $|$
+  \large{\faGithub\space}\href{https://github.com/tariq9mehmood9}{\underline{tariq9mehmood9}}
+\end{center}
+
+%
+%----------OVERVIEW----------
+\begin{flushleft}
+A dynamic individual with exceptional quick learning ability. Along with a strong analytical mindset, effective communication skills, and a robust work ethic, I bring expertise in Python, C/C++, and key machine learning toolkits and libraries. I have hands-on experience in developing and deploying RAG-based applications with LLMs, as well as fine-tuning open-source LLMs. Additionally, I possess a strong theoretical understanding of various Deep Learning models and have experience implementing them in PyTorch.
+\end{flushleft}
+
+%
+%-----------EDUCATION-----------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {MS Computer Science}{Sep 2023 -- Current}
+      {Lahore University of Management Sciences}{3.5/4.0 CGPA}
+      \resumeItemListStart
+        \resumeItem{Generative AI for Speech and Language Processing}
+          \resumeSubItem{NLP, Morphology, HMMs, Word Embeddings, Attention, Transformer Architecture, Fine Tuning}
+        \resumeItem{Deep Learning}
+          \resumeSubItem{CNNs, Auto-Encoders, GANs, RNNs, LSTM, ViTs, GNNs, Network Compression, Stable Diffusion}
+        \resumeItem{Design and Analysis of Algorithms}
+          \resumeSubItem{Dynamic programming, Graph algorithms, Complexity theory}
+        \resumeItem{Applied Probability}
+          \resumeSubItem{Bayesian Inference, MAP, MLE, Random processes, Markov processes}
+        \resumeItemListEnd
+        
+    \resumeSubheading
+      {BS Electrical Engineering}{2017 -- 2021}
+      {University of Engineering and Technology Lahore}{3.47/4.0 CGPA}
+      \resumeItemListStart
+        \resumeItem{Introduction to Machine Learning (A Grade)}
+        \resumeItem{Database Engineering(A- Grade)}
+        \resumeItem{Data Structures and Algorithms (A Grade)}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%
+%-----------PROJECTS-----------
+\section{Projects}
+    \resumeSubHeadingListStart
+      \resumeProjectHeading
+        {\textbf{Text-Based Adventure Game Using Generative AI}}{}
+        \resumeItemListStart
+          \resumeItem{The objective of the project was to explore different avenues in Generative AI ranging from fine tuning LLMs, building RAG-based systems, text-to-image generation, and deploying open source LLMs for inference}
+          \resumeItem{Led the development of an AI-powered interactive storytelling platform that allows users to create and explore dynamic narratives in a text-based adventure format}
+          \resumeItem{Leveraged the \textbf{Mistral-7B-Instruct} model for narrative generation and the \textbf{Dalle-3 OpenAI API} for image generation, achieving a cohesive fusion of text and visual elements}
+          \resumeItem{Integrated game mechanics through advanced \textbf{prompt engineering} techniques along with supplementary code around it}
+          \resumeItem{Utilized Low-Rank Adaptation method to perform \textbf{Parameter Efficient Fine Tuning} (PEFT) of Mistral-7b-Instruct on a curated dataset of 300 stories across genres, resulting in improved story generation capabilities}
+          \resumeItem{Implemented a Query-Handling system powered by \textbf{Retrieval-Augmented Generation} for player engagement}
+          \resumeItem{Deployed a \textbf{Streamlit} application with integrated Flask API for seamless gameplay}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Dynamic Tariff Implementation}}{}
+        \resumeItemListStart
+          \resumeItem{Research on comparison of block-rate tariff vs dynamic tariff}
+          \resumeItem{MATLAB implementation of Economic Dispatch Algorithm and simulation of a Simulink model prototyping dynamic tariff for synchronized micro-grids}
+          \resumeItem{Development of a dynamic and responsive website along with an Android application}
+          \resumeSubItem{Django $|$ Bootstrap 4 $|$ MySQL $|$ Kotlin}
+        \resumeItemListEnd
+
+      \resumeProjectHeading
+        {\textbf{Line Following Robot}}{}
+        \resumeItemListStart
+          \resumeItem{Microcontroller: TIVA Cortex M-4 TM4C1233H6PM}
+          \resumeItem{Bare-metal implementation of a closed-loop PID control system that takes input from an IR sensor array and adjusts the duty cycle of the PWM output by the timers (configured in PWM mode) to control the speed of individual motors keeping the robot on track}
+          \resumeItem{Secured highest position out of 40 projects}
+        \resumeItemListEnd
+          
+    \resumeSubHeadingListEnd
+
+%
+%-----------EXPERIENCE-----------
+\section{Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Senior Software Development Engineer}{Jan 2023 -- Dec 2023}
+      {Siemens Industry Software Pvt Limited}{}
+      \resumeItemListStart
+        \resumeItem{Linux/Yocto Board Support Package (BSP) development for NXP's i.MX8 hardware platforms (i.MX8M Plus, i.MX8M Mini, i.MX8QxP)}
+        \resumeItem{Enhancement of product features such as Firmware Update (SWUpdate) and eMMC Booting. Porting these features along with SELinux, docker, and Qt6 support to a new version of the product}
+        \resumeItem{Board bring-up and Linux boot process on Arm/Aarch64-based platforms}
+        \resumeItem{Porting kernel LTS updates}
+        \resumeItem{Preparing comprehensive doc input used by the tech pubs for product documentation}
+        \resumeItem{Documenting how-to's and process development for CVE fixing}
+        \resumeItem{Provide technical guidance and training to new hires}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Software Development Engineer}{Aug 2021 -- Dec 2022}
+      {Siemens Industry Software Pvt Limited}{}
+      \resumeItemListStart
+        \resumeItem{Security and vulnerability management of Mentor Embedded Linux Flex OS, a commercially supported Yocto-based Embedded Linux distribution for industrial applications}
+        \resumeItem{Gained working knowledge of BitBake/OpenEmbedded, Linux Kernel, and U-Boot bootloader}
+        \resumeItem{Got hands-on experience working with many hardware platforms, including NXP. i.MX family of boards and Xilinx ZynqMP/MPSoC}
+        \resumeItem{Investigating, triaging, and porting the fixes for Common Vulnerabilities and Exposures (CVEs) in several different packages across all the supported releases of MEL Flex OS}
+        \resumeItem{Formulated and documented the process improvements for efficient monitoring and triaging of CVEs}
+      \resumeItemListEnd
+
+  \resumeSubHeadingListEnd
+
+%
+%-----------Certifications-----------
+\section{Certifications}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\href{https://www.coursera.org/account/accomplishments/certificate/UV8TRJ6E6YYU}{\textbf{Machine Learning -- Coursera}}}{Jun 2020}
+      \resumeItemListStart
+        \resumeItem{Regression, Multi-class classification, Backpropagation, SVMs, Clustering, Dimensionality reduction}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\href{https://www.coursera.org/account/accomplishments/certificate/B2RWCJF7G97J}{\textbf{Neural Networks and Deep Learning -- Coursera}}}{May 2020}
+      \resumeItemListStart
+        \resumeItem{Logistic regression, Vectorization, Shallow and Deep neural networks}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\href{https://www.coursera.org/account/accomplishments/certificate/KREV2D4MXD7V}{\textbf{Improving Deep Neural Networks -- Coursera}}}{Jun 2020}
+      \resumeItemListStart
+        \resumeItem{Regularization, Optimization algorithms, Hyperparameter tuning}
+      \resumeItemListEnd
+    \resumeProjectHeading
+      {\textbf{Best Semester Project – Line Following Robot}}{Dec 2019}
+      \resumeItemListStart
+        \resumeItem{A collaborative semester project for Microprocessor systems lab and Control systems lab}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+            
+%
+%-----------PROGRAMMING SKILLS-----------
+\section{Technical Skills}
+ \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+     \textbf{Languages}{: Python, C/C++, Java, SQL, Assembly (ARM Cortex-M, RISC V Architectures)} \\
+     \textbf{Frameworks}{: Pytorch, Django, Jubula} \\
+     \textbf{Developer Tools}{: Git, Docker, Linux, Windows, MacOS, Eclipse} \\
+     \textbf{Toolkits and Libraries}{: Pandas, NumPy, Matplotlib, Huggingface, nltk, hmmlearn}
+    }}
+ \end{itemize}
+
+%-------------------------------------------
+\end{document}
